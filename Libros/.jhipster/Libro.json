@@ -1,0 +1,45 @@
+{
+    "name": "Libro",
+    "fields": [
+        {
+            "fieldName": "editorial",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "titulo",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "ejemplar",
+            "otherEntityRelationshipName": "libro",
+            "relationshipName": "ejemplar"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "autor",
+            "otherEntityRelationshipName": "libro",
+            "relationshipName": "autor",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190702200042",
+    "entityTableName": "libro",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "Libros",
+    "applications": "*",
+    "microserviceName": "Libros"
+}

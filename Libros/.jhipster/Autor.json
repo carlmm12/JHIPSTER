@@ -1,0 +1,50 @@
+{
+    "name": "Autor",
+    "fields": [
+        {
+            "fieldName": "nombre",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "web",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 100
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength",
+                "pattern"
+            ],
+            "fieldValidateRulesMaxlength": 50,
+            "fieldValidateRulesPattern": "^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "libro",
+            "otherEntityRelationshipName": "autor",
+            "relationshipName": "libro",
+            "otherEntityField": "titulo",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190702200041",
+    "entityTableName": "autor",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "Libros",
+    "applications": "*",
+    "microserviceName": "Libros"
+}

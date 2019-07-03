@@ -1,0 +1,42 @@
+
+
+
+entity Autor {
+	nombre String required,
+    web String maxlength(100),
+    email String maxlength(50) pattern(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/)
+    
+}
+
+entity Libro {
+	editorial String required,
+    titulo String required
+}
+
+entity Ejemplar{
+ edicion String required,
+ encuadernacion String required,
+ precio Double required
+}
+
+entity Cliente {
+nombre String required,
+direccion String maxlength(30),
+telefono Integer,
+email String maxlength(50) pattern(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/)
+
+}
+
+relationship ManyToMany{
+Autor{libro(titulo)} to Libro{autor}
+}
+
+relationship OneToMany{
+ Libro{ejemplar} to Ejemplar{libro}
+ Cliente{libro} to Ejemplar{cliente}
+
+}
+
+paginate all with infinite-scroll
+
+service all with serviceClass

@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.libro",
+      "nativeLanguage": "es"
+    },
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "microservice",
+    "baseName": "Libros",
+    "packageName": "com.libro",
+    "packageFolder": "com/libro",
+    "serverPort": "8091",
+    "authenticationType": "uaa",
+    "uaaBaseName": "auteticacion",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NDE3NTA0NzBhMWNkYmEzYzJiYTgwOTBlMDhlODhlOGNhNjViMDk3MTEzYTAzNWViMWFhYTQxNjkyZDllYzk5MDcxMjIyYmRmNzZiNjY4YWZlMDJiNTgzMGJhOThiZDAyOGNjOGJhNWMwOTkzZWNmODBhMzQ0ZmM2ZGIyOTc0NTY=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "es",
+    "languages": [
+      "es",
+      "bn",
+      "en"
+    ],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
