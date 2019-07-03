@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.samtel.autenticar",
+      "nativeLanguage": "es"
+    },
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "uaa",
+    "baseName": "auteticacion",
+    "packageName": "com.samtel.autenticar",
+    "packageFolder": "com/samtel/autenticar",
+    "serverPort": "9999",
+    "authenticationType": "uaa",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YTVmOTI5ZGZhM2Q1MjNjOTZlOWViYjQzOTMxZTRhNTI3ZWNkM2M2ZmM1MDk3NjMyOTNhZTQ5MjdlOWEyNTRiZTNlZTc3NjE1NmNmYTU2ZGRjY2NjM2MwMzdlNWIwYmQ3NDExMDQxOWYxNzMzZTlkNjRhNjk3ZTViNjE1YWI5YTE=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "es",
+    "languages": [
+      "es",
+      "en"
+    ],
+    "skipClient": true
+  }
+}
